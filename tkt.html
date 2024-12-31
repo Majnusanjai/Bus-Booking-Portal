@@ -1,0 +1,54 @@
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bus Booking</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <script src="book.js"></script>
+    </head>
+    <body>
+       
+        <div class="container">
+            <div class="row mt-5 ">
+                <div class="col-6">
+                    <button class="color   px-5"> <a class=" text-decoration-none"  href="book.html">Back</a></button>
+                </div>
+
+            </div>
+            <h1 class=" one my-4 mt-5">Bus Booking System</h1>
+            <form id="booking-form" class="mt-4">
+                <div class="form-group">
+                    <label for="departure">Departure Location</label>
+                    <input type="text" class="form-control" id="departure" placeholder="Enter Departure Location" required>
+                </div>
+                <div class="form-group">
+                    <label for="destination">Destination</label>
+                    <input type="text" class="form-control" id="destination" placeholder="Enter Destination" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Travel Date</label>
+                    <input type="date" class="form-control" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="seats">Number of Seats</label>
+                    <input type="number" class="form-control" id="seats" min="1" required>
+                </div>
+                <button type="submit " class="btn btn-primary">Book Ticket</button>
+            </form>
+            <div id="confirmation" class="mt-4"></div>
+        </div>
+    
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="book.js"></script>
+    </body>
+    </html>
+    
+    
+</body>
+</html>
